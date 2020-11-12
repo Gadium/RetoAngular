@@ -14,6 +14,7 @@ export class VerEmpleadosComponent implements OnInit {
     'employeeName',
     'employeeSalary',
     'employeeAge',
+    'actions'
   ];
   dataSource: MatTableDataSource<EmployerCustom>;
     constructor() { }
