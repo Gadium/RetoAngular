@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { EmployerCustom } from './core/models/employer.model';
+import { EmployersService } from './services/employers.service';
 
 @Component({
   selector: 'app-root',
@@ -8,3 +10,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'RetoAngular';
 }
+
