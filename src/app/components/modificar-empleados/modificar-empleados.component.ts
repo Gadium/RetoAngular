@@ -28,7 +28,7 @@ export class ModificarEmpleadosComponent implements OnInit {
 
   submit(){
     this.formValue.emit(this.formOwner.value);
-    console.log(this.formOwner.value);
+    console.log('from form',this.formOwner.value);
   }
 
 }

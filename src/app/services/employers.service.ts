@@ -34,7 +34,7 @@ export class EmployersService {
 
   public updateEmployee(body): Observable<any>{
     return this.http.put(
-      'http://dummy.restapiexample.com/api/v1/update/',
+      `http://dummy.restapiexample.com/api/v1/update/${body.id}`,
       JSON.stringify(body)
     )
     .pipe(
