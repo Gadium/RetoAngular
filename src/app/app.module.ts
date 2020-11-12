@@ -25,6 +25,8 @@ import { MatListModule } from  '@angular/material/list';
 import { TablaempleadosComponent } from './features/tablaempleados/tablaempleados.component';
 import { NuevoempleadoComponent } from './features/nuevoempleado/nuevoempleado.component';
 import { EditempleadoComponent } from './features/editempleado/editempleado.component';
+import { DeleteempleadoComponent } from './features/deleteempleado/deleteempleado.component';
+import { BorrarEmpleadoComponent } from './components/borrar-empleado/borrar-empleado.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { EditempleadoComponent } from './features/editempleado/editempleado.comp
     ModificarEmpleadosComponent,
     TablaempleadosComponent,
     NuevoempleadoComponent,
-    EditempleadoComponent
+    EditempleadoComponent,
+    DeleteempleadoComponent,
+    BorrarEmpleadoComponent
   ],
   imports: [
     BrowserModule,

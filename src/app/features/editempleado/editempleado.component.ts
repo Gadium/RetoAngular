@@ -11,7 +11,6 @@ export class EditempleadoComponent implements OnInit {
   constructor(private employers: EmployersService) { }
 
   ngOnInit(): void {
-    console.log('init edit form parent')
   }
 
   updateEmployer(values){
@@ -21,8 +20,8 @@ export class EditempleadoComponent implements OnInit {
   }
 
   getFormValue(values){
-    console.log('Entra')
-    console.log('values from parent', values);
+    //console.log('Entra')
+    //console.log('values from parent', values);
     this.updateEmployer(values);
   }
 

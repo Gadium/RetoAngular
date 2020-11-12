@@ -45,6 +45,20 @@ export class EmployersService {
     );
   }
 
+  public deleteEmployee(body): Observable<any>{
+    return this.http.put(
+      `http://dummy.restapiexample.com/api/v1/delete/${body.id}`,
+      JSON.stringify(body)
+    )
+    .pipe(
+      map((res) => res),
+      catchError((err) => {
+        return err;
+      })
+    );
+  }
+
+
   mapInterfaceToEmployeeObject(
     employerCollection: Employer[]
   ): EmployerCustom[] {
